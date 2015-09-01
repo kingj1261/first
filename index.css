@@ -1,0 +1,673 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100%;
+    min-width: 650px;
+    overflow-x: scroll;
+}
+
+p,span{
+	clear: both;
+	content: '';
+}
+
+/* 头部导航*/
+.top{
+	height: 51px;
+	width: 100%;
+	position: relative;
+}
+
+.top .left{
+	float: left;
+}
+
+
+.top .left .title{
+	margin-left: 20px;
+	float: left;
+}
+
+.top .left .title span{
+	font-size: 14px;
+}
+
+
+.top .right{
+	float: right;
+	width: 520px;
+}
+
+.top .right .company{
+	float: left;
+	margin-right: 20px;
+}
+
+.top .right .company .companyName{
+	float: left;
+}
+
+.banner-text{
+	font-size: 12px;
+	line-height: 45px;
+	color: #666666;
+    font-family: "Microsoft YaHei", sans-serif;
+    display: inline-block;
+}
+
+.banner-icon{
+	background: url(images/banners.png) no-repeat;
+	background-position: -30px 1px;
+	width: 20px;
+	height: 20px;
+	margin-top: 19px;
+	margin-left: 8px;
+	float: left;
+	cursor: pointer;
+}
+
+.top .right .middle{
+	position: relative;
+	float: left;
+	width: 20%;
+	height: 51px;
+	border-left: 2px solid #f1f3f4;
+	border-right: 2px solid #f1f3f4;
+}
+
+
+.top .right .middle .env{
+	margin-left: 20px;
+	float: left;
+}
+
+
+.top .right .middle .env-icon{
+	float: left;
+	background: url(images/banners.png) no-repeat;
+	background-position: 2px 1px;
+	width: 20px;
+	height: 20px;
+	margin-top: 14px;
+	cursor: pointer;
+}
+
+
+.top .right .doc{
+	float: left;
+	width: 20px;
+	background: url(images/banners.png) no-repeat;
+	background-position: -25px -10px;
+	cursor: pointer;
+	height: 51px;
+	margin-left: 20px;
+}
+
+.top .right .score{
+	float: left;
+	width: 30px;
+	height: 30px;
+	background: url(images/banners.png) no-repeat;
+	background-position: 0px -25px;
+	margin-top: 16px;
+	margin-left: 45px;
+	cursor: pointer;
+}
+
+.top .right .score .score-number{
+	float: left;
+	width: 18px;
+	height: 18px;
+	border-radius: 18px;
+	margin-top: -19px;
+	margin-left: 20%;
+	background-color: #fe8c6a;
+	cursor: pointer;
+	text-align: center;
+}
+
+.top .right .score .score-number span{
+	font-size: 6px;
+	font-family: "Microsoft YaHei" sans-serif;
+	color: #ffffff;
+	padding-left: 1px;
+}
+
+.top .right .score .score-number-outer{
+	float: left;
+	width: 19px;
+	height: 19px;
+	border-radius: 19px;
+	margin-top: -8px;
+	margin-left: 5px;
+	background-color: #ffffff;
+}
+
+.top .right  .head{
+	float: right;
+	background: url(images/head.png) no-repeat;
+	width: 50px;
+	height: 50px;
+	margin-top: -3px;
+	margin-right: 30px;
+	transform:scale(0.6);
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+
+
+/* 左侧菜单*/
+.menu{
+	width: 180px;
+	position: absolute;
+	height: 100%;
+	background-color: #3a536e;
+}
+
+.menu .menu-items{
+	width: 80%;
+	float: left;
+	top: 0px;
+	margin-top: -12px;
+}
+
+
+.menu .collapse{
+	width: 7px;
+	height: 12px;
+	margin-top: 10px;
+	margin-right: 10px;
+	float: right;
+	cursor: pointer;
+}
+
+.menu .collapse:hover{
+	cursor: pointer;
+}
+
+.menu .collapse:hover .item{
+	background-color: #ffffff;
+}
+
+
+.menu .collapse .item{
+	width: 7px;
+	height: 2px;
+	margin-bottom: 2px;
+	background-color: #7f95ab;
+}
+
+.menu .menu-items .menu-item {
+    font-family: "Microsoft YaHei", sans-serif;
+    color: #7f95ab;
+    font-size: 12px;
+    line-height: 36px;
+    margin-left: -15px;
+    margin-bottom: 4px;
+    list-style-type: none;
+	background: url(images/menu-icon.png) no-repeat;
+	background-position: 0px 15px;
+	padding-left: 10px;
+}
+
+.menu .menu-items .selected{
+	color: #ffffff;
+	font-weight: bold;
+}
+
+
+.menu .menu-items .menu-item:hover{
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu .menu-dot{
+	width: 4px;
+	height: 4px;
+	border-radius: 4px;
+	display: inline-block;
+	background-color: #ffffff;
+	margin-right: 10px;
+	margin-top: -5px;
+}
+
+/* 右侧面板*/
+.content{
+	position: absolute;
+	left: 180px;
+	height: auto;
+	background-color: #e7eaec; 
+	bottom: 0;
+	top: 50px;
+	overflow: auto;
+}
+
+.content .container{
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.content .container .bread{
+	height: 38px;
+	font-family: "Microsoft YaHei", sans-serif;
+    font-size: 12px;
+    line-height: 38px;
+    color: #666666;
+}
+
+.content .container .bread span:last-child{
+	font-weight: bold;
+	color: #000;
+}
+
+.content .container .main{
+	background-color: white;
+	float: right;
+}
+
+.content .container .main .top{
+	color: #20b6ed;
+	font-size: 12px;
+	height: 70px;
+}
+
+.content .container .main .top .history {
+	float: right;
+	margin-top: 47px;
+	margin-right: 12px;
+}
+
+.content .container .main .top .history span{
+	font-family: "Microsoft YaHei" sans-serif;
+	font-size: 12px;
+	color: #67c2ef;
+	font-style: bold;
+	background: url(images/bar-icon.png) no-repeat;
+	background-position: 0px 3px;
+    cursor: pointer;
+    line-height: 10px;
+    padding: 1px 0 1px 20px;
+}
+
+.content .container .main .search{
+	height: 60px;
+	float: right;
+	margin-right: 12px;
+}
+
+.content .container .main .search .searchbar{
+	padding: 10px;
+	padding-right: 0px;
+}
+
+.content .container .main .search .searchbar span{
+	background: url(images/bar-icon.png) no-repeat;
+}
+
+.content .container .main .search .searchbar .search-input{
+	height: 25px;
+	margin-top: 0px;
+	border-radius: 3px;
+	border: 1px solid #d9d9d9;
+	float: left;
+	font-size: 12px;
+	font-family: "Microsoft YaHei" sans-serif;
+	padding-left: 12px;
+	background: url(images/pages.png) no-repeat;
+	background-position: 90% 6px;
+}
+
+.content .container .main .search .searchbar .searchBtn{
+	background: url(images/bar-icon.png) no-repeat;
+	background-position: 7px -54px;
+	background-color: #2db7f5;
+	border: none;
+	border-radius: 3px;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	float: left;
+	position: relative;
+	margin-left: 5px;
+	margin-right: 10px;
+	color: #b3b3b3;
+}
+
+.content .container .main .search .searchbar .list{
+	background: url(images/bar-icon.png) no-repeat 0 0;
+	background-position: 7px -16px;
+	margin-top: 2px;
+	position: relative;
+	float: left;
+	width: 28px;
+	height: 25px;
+	cursor: pointer;
+}
+
+.content .container .main .search .searchbar .list-all{
+	background: url(images/bar-icon.png) no-repeat 0 0;
+	background-position: 7px -34px;
+	position: relative;
+	float: left;
+	width: 28px;
+	height: 28px;
+	margin-left: -5px;
+	cursor: pointer;
+}
+
+/* 组件区域*/
+.content .container .main .center{
+	margin-top: 1px;
+	height: auto;
+	float: right;
+}
+
+/*单个组件样式*/
+.content .container .main .center .component{
+	width: 305px;
+	height: 91px;
+	float: left;
+	margin: 20px 20px;
+	border: 1px solid #edeff1;
+	border-radius: 3px;
+	margin-top: 14px;
+}
+
+.content .container .main .center .component:hover{
+	border: 1px solid #23c0fa;
+	border-radius: 3px;
+}
+
+
+.content .container .main .center .component:hover .remark{
+	background-color: #f4fcff;
+}
+
+.content .container .main .center .component:hover .remark .dot{
+	background-color: #fe8c6a;
+}
+
+.content .container .main .center .component:hover .remark .remark-title{
+	color: #fe8c6a;
+}
+
+/* 服务描述*/
+.content .container .main .center .component .remark{
+	height: 100%;
+	width: 209px;
+	border-right: 1px solid #edeff1;
+}
+
+.content .container .main .center .component .leftBorder{
+	float: left;
+	width: 3px;
+	height: 100%;
+	background-color: #2db7f5;	
+}
+
+.content .container .main .center .component .remark .icon{
+	float: left;
+	width: 65px;
+	height: 100%;
+}
+
+.content .container .main .center .component .remark .desc{
+	float: left;
+	height: 100%;
+}
+
+/** 备注区域左侧圆点*/
+.dot{
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+	margin-top: 23px;
+	margin-left: 9px;
+	float: left;
+}
+
+/** 绿色圆点*/
+.dot-green{
+	background-color: #87d068;
+}
+
+/** 棕红色圆点*/
+.dot-red{
+	background-color: #fe8c6a;
+}
+
+/** 蓝色圆点*/
+.dot-blue{
+	background-color: #3fc7fa;
+}
+
+.memos{
+	float: left;
+	margin-left: 5px;
+	margin-top: 17px;
+}
+
+/** 描述中title*/
+.memos .remark-title{
+	font-family: "Microsoft YaHei" sans-serif;
+	font-size: 12px;
+	color: #666666;
+	font-weight: bold;
+	display: block;
+}
+
+/** 描述-版本,是否共享信息*/
+.memos .remark-other{
+	font-family: "Microsoft YaHei" sans-serif;
+	font-size: 12px;
+	color: #999999;
+	display: block;
+	margin-top: 5px;
+}
+
+/* 服务操作*/
+.component .operation{
+	float: right;
+	position: relative;
+	width: 90px;
+	height: 100%;
+	margin-top: -93px;
+}
+
+.component .operation span{
+	display: inline-block;
+	color: #00abea;
+	font-family: "Microsoft YaHei" sans-serif;
+	font-size: 12px;
+	margin-top: 40px;
+	cursor: pointer;
+}
+
+.component .operation span:first-child{
+	margin-left: 10px;
+}
+
+/** 分隔符*/
+.component .operation  #splitor{
+	transform:scaleY(0.75);
+	color: #7f95ab;
+}
+
+/* 服务注册*/
+.component .remark .icon-register{
+	background: url(images/icons.png) no-repeat;
+	background-position: 15px 25px;
+}
+
+/** 可靠消息队列*/
+.component .remark .icon-msgbroker{
+	background: url(images/icons.png) no-repeat;
+	background-position: -45px 25px;
+}
+
+/** 分布式资源管理*/
+.component .remark .icon-drm{
+	background: url(images/icons.png) no-repeat;
+	background-position: -105px 25px;
+}
+
+/** 数据中心*/
+.component .remark .icon-idc{
+	background: url(images/icons.png) no-repeat;
+	background-position: -220px 25px;
+}
+
+/** 无线通知中心*/
+.component .remark .icon-wife-notify{
+	background: url(images/icons.png) no-repeat;
+	background-position: -160px 25px;
+}
+
+
+/** 统一配置管理*/
+.component .remark .config-manage{
+	background: url(images/icons.png) no-repeat;
+	background-position: -160px 25px;
+}
+
+/** 分布式事务*/
+.component .remark .icon-xts{
+	background: url(images/icons.png) no-repeat;
+	background-position: -332px 25px;
+}
+
+/** 无线网关*/
+.component .remark .icon-getway{
+	background: url(images/icons.png) no-repeat;
+	background-position: -278px 25px;
+}
+
+
+.main .bottom{
+	width: 100%;
+}
+
+.main .bottom .pagebar{
+	font-family: "Microsoft YaHei" sans-serif;
+	font-size: 12px;
+	color: #666666;
+	margin-top: 10px;
+	float: right;
+	margin-right: 0px;
+	height: 80px;
+}
+
+.main .bottom .pagebar span{
+	line-height: 45px;
+	margin-left: 5px;
+}
+
+.main .bottom .pagebar .pageTitle{
+	margin-left: 5px;
+	margin-right: 20px;
+	float: left;
+}
+
+.main .bottom .pagebar .page{
+	width: 28px;
+	height: 28px;
+	margin-left: 5px;
+	margin-top: 8px;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	float: left;
+}
+
+.main .bottom .pagebar .page:hover{
+	color: white;
+	font-weight: bold;
+	background-color: #3fc7fa;
+	cursor: pointer;
+}
+
+.main .bottom .pagebar .page span{
+	line-height: 27px;
+	margin-left: 10px;
+}
+
+.main .bottom .pagebar .firstPage{
+	background: url(images/pages.png) no-repeat;
+	background-position: 10px -110px;
+}
+
+.main .bottom .pagebar .firstPage:hover{
+	background: url(images/pages-white.png) no-repeat;
+	background-position: 10px -110px;
+	background-color: #3fc7fa;
+}
+
+.main .bottom .pagebar .prePage{
+	background: url(images/pages.png) no-repeat;
+	background-position: 10px -74px;
+}
+
+.main .bottom .pagebar .prePage:hover{
+	background: url(images/pages-white.png) no-repeat;
+	background-position: 10px -74px;
+	background-color: #3fc7fa;
+}
+
+.main .bottom .pagebar .nextPage{
+	background: url(images/pages.png) no-repeat;
+	background-position: 10px -45px;
+}
+
+.main .bottom .pagebar .nextPage:hover{
+	background: url(images/pages-white.png) no-repeat;
+	background-position: 10px -45px;
+	background-color: #3fc7fa;
+}
+
+.main .bottom .pagebar .lastPage{
+	background: url(images/pages.png) no-repeat;
+	background-position: 10px -16px;
+}
+
+.main .bottom .pagebar .lastPage:hover{
+	background: url(images/pages-white.png) no-repeat;
+	background-position: 10px -16px;
+	background-color: #3fc7fa;
+}
+
+.main .bottom .pagebar .pageSelect{
+	margin-left: 5px;
+	margin-right: 20px;
+	float: left;
+}
+
+.main .bottom .pagebar .pageSelect select{
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	margin-top: 8px;
+	height: 29px;
+	font-family: "Microsoft YaHei" sans-serif;
+	font-size: 12px;
+	color: #666666;
+	padding-left: 5px;
+}
+
+.main .bottom .pagebar .lastPageTitle{
+	margin-left: 5px;
+	margin-right: 20px;
+	float: left;
+}
+
+.main .bottom .pagebar .lastPageTitle input{
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	margin-top: 8px;
+	padding-left: 5px;
+	height: 24px;
+	width: 52px;
+	font-family: "Microsoft YaHei" sans-serif;
+	font-size: 12px;
+	color: #666666;
+}

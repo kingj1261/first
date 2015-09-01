@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>第三堂课后作业</title>
+	<meta charset="utf-8">
+	<link href="index.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<!-- 头部导航-->
+	<div class="top">
+		
+		<div class="left">
+			<!-- 标题-->
+			<div class="title"><span class="banner-text">云计算管理</span></div>
+		</div>
+
+		<div class="right">
+			<!-- 公司名称-->
+			<div class="company">
+				<div class="companyName"><span class="banner-text">支付宝(中国)网络有限公司</span></div>
+				<div class="banner-icon"></div>
+			</div>
+
+			<div class="middle">
+				<div class="env"><span class="banner-text">研发环境</span></div>
+				<div class="env-icon"></div>
+			</div>
+
+			
+			<div class="doc"></div>
+			<div class="score">
+				<div class="score-number-outer"></div>
+				<div class="score-number">
+					<span>20</span>
+				</div>
+			</div>
+			<div class="head"></div>	
+			
+		</div>
+	</div>
+
+	<!-- 左侧菜单栏-->
+	<div class="menu">
+		<div class="menu-items">
+			<ul>
+				<li class="menu-item">组件安装</li>
+			  	<li class="menu-item selected">已安装组件</li>
+			</ul>
+		</div>
+
+		<div class="collapse">
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+		</div>
+	</div>
+
+	<!-- 右侧主面板-->
+	<div class="content">
+		<div class="container">
+			<div class="bread">
+				<span>基础组件</span>&nbsp;/&nbsp;
+				<span>已安装组件</span>
+			</div>
+			
+			<div class="main">
+
+				<div class="top">
+					<div class="history"><span>操作历史</span></div>
+				</div>
+
+				<!-- 搜索栏-->
+				<div class="search">
+					<div class="searchbar">
+						<input type="text" class="search-input" value="输入组件名称" onfocus="this.value=''" />
+						<div class="searchBtn"></div>
+						<div class="list"></div>
+						<div class="list-all"></div>
+					</div>
+				</div>
+
+				<!-- 组件区域-->
+				<div class="center" id="mainCenter">
+					<!-- 服务注册-->
+					<div class="component">
+						<div class="leftBorder"></div>
+						<div class="remark">
+							<div class="icon icon-register"></div>
+							<div class="desc">
+								<div class="dot dot-green"></div>
+								<div class="memos">
+									<span class="remark-title">服务注册中心</span>
+									<span class="remark-other">版本: 1.0</span>
+									<span class="remark-other">源自共享: 否</span>
+								</div>
+							</div>
+						</div>
+						<div class="operation">
+							<span>运维</span>
+							<span id="splitor">|</span>
+							<span>详情</span>
+						</div>
+					</div>
+
+
+
+					<!-- 消息队列-->
+					<div class="component">
+						<div class="leftBorder"></div>
+						<div class="remark">
+							<div class="icon icon-msgbroker"></div>
+							<div class="desc">
+								<div class="dot dot-green"></div>
+								<div class="memos">
+									<span class="remark-title">可靠消息队列</span>
+									<span class="remark-other">版本: 1.0</span>
+									<span class="remark-other">源自共享: 否</span>
+								</div>
+							</div>
+						</div>
+						<div class="operation">
+							<span>运维</span>
+							<span id="splitor">|</span>
+							<span>详情</span>
+						</div>
+					</div>
+
+					<!-- 分布式资源管理-->
+					<div class="component">
+						<div class="leftBorder"></div>
+						<div class="remark">
+							<div class="icon icon-drm"></div>
+							<div class="desc">
+								<div class="dot dot-green"></div>
+								<div class="memos">
+									<span class="remark-title">分布式资源管理</span>
+									<span class="remark-other">版本: 1.0</span>
+									<span class="remark-other">源自共享: 否</span>
+								</div>
+							</div>
+						</div>
+						<div class="operation">
+							<span>运维</span>
+							<span id="splitor">|</span>
+							<span>详情</span>
+						</div>
+					</div>
+
+
+					<!-- 数据中心-->
+					<div class="component">
+						<div class="leftBorder"></div>
+						<div class="remark">
+							<div class="icon icon-idc"></div>
+							<div class="desc">
+								<div class="dot dot-blue"></div>
+								<div class="memos">
+									<span class="remark-title">数据中心</span>
+									<span class="remark-other">版本: 1.0</span>
+									<span class="remark-other">源自共享: 否</span>
+								</div>
+							</div>
+						</div>
+						<div class="operation">
+							<span>运维</span>
+							<span id="splitor">|</span>
+							<span>详情</span>
+						</div>
+					</div>
+
+					<!-- 无线通知中心-->
+					<div class="component">
+						<div class="leftBorder"></div>
+						<div class="remark">
+							<div class="icon icon-wife-notify"></div>
+							<div class="desc">
+								<div class="dot dot-red"></div>
+								<div class="memos">
+									<span class="remark-title">无线通知中心</span>
+									<span class="remark-other">版本: 1.0</span>
+									<span class="remark-other">源自共享: 否</span>
+								</div>
+							</div>
+						</div>
+						<div class="operation">
+							<span>运维</span>
+							<span id="splitor">|</span>
+							<span>详情</span>
+						</div>
+					</div>
+
+					<!-- 统一配置管理-->
+					<div class="component">
+						<div class="leftBorder"></div>
+						<div class="remark">
+							<div class="icon config-manage"></div>
+							<div class="desc">
+								<div class="dot dot-blue"></div>
+								<div class="memos">
+									<span class="remark-title">统一配置管理</span>
+									<span class="remark-other">版本: 1.0</span>
+									<span class="remark-other">源自共享: 否</span>
+								</div>
+							</div>
+						</div>
+						<div class="operation">
+							<span>运维</span>
+							<span id="splitor">|</span>
+							<span>详情</span>
+						</div>
+					</div>
+
+					<!-- 分布式事务-->
+					<div class="component">
+						<div class="leftBorder"></div>
+						<div class="remark">
+							<div class="icon icon-xts"></div>
+							<div class="desc">
+								<div class="dot dot-green"></div>
+								<div class="memos">
+									<span class="remark-title">分布式事务</span>
+									<span class="remark-other">版本: 1.0</span>
+									<span class="remark-other">源自共享: 否</span>
+								</div>
+							</div>
+						</div>
+						<div class="operation">
+							<span>运维</span>
+							<span id="splitor">|</span>
+							<span>详情</span>
+						</div>
+					</div>
+
+
+					<!-- 无线网关-->
+					<div class="component">
+						<div class="leftBorder"></div>
+						<div class="remark">
+							<div class="icon icon-getway"></div>
+							<div class="desc">
+								<div class="dot dot-green"></div>
+								<div class="memos">
+									<span class="remark-title">无线网关</span>
+									<span class="remark-other">版本: 1.0</span>
+									<span class="remark-other">源自共享: 否</span>
+								</div>
+							</div>
+						</div>
+						<div class="operation">
+							<span>运维</span>
+							<span id="splitor">|</span>
+							<span>详情</span>
+						</div>
+					</div>
+
+
+
+				</div>
+
+				<!--底部-->
+				<div class="bottom">
+					<!--分页栏-->
+					<div class="pagebar">
+						<div class="pageTitle"><span>共40条记录  第1/25页</span></div>
+						<div class="page firstPage"></div>
+						<div class="page prePage"></div>
+						<div class="page"><span>1</span></div>
+						<div class="page"><span>2</span></div>
+						<div class="page"><span>3</span></div>
+						<div class="page"><span>4</span></div>
+						<div class="page"><span>5</span></div>
+						<div class="page nextPage"></div>
+						<div class="page lastPage"></div>
+						<div class="pageSelect">
+							<select>
+								<option>10条/页</option>
+							</select>
+						</div>
+						<div class="lastPageTitle">
+							<span>跳至</span>
+							<input type="text"/>
+							<span>页</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

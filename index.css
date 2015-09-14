@@ -671,3 +671,8 @@ p,span{
 	font-size: 12px;
 	color: #666666;
 }
+
+/** js动态添加需要的样式表*/
+.menu-hide{
+	display: none;
+}

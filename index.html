@@ -6,7 +6,9 @@
 	<link href="index.css" rel="stylesheet" type="text/css">
 	<script type="text/javascript" src="scripts/jquery-1.11.3.js"></script>
 	<script type="text/javascript" src="scripts/jquery-migrate-1.0.0.js"></script>
+	<script type="text/javascript" src="scripts/jsrender.js"></script>
 	<script type="text/javascript" src="scripts/index.js"></script>
+
 </head>
 <body>
 	<!-- 头部导航-->
@@ -281,7 +283,7 @@
 						</div>
 						<div class="lastPageTitle">
 							<span>跳至</span>
-							<input type="text"/>
+							<input type="text" id="targetPage"/>
 							<span>页</span>
 						</div>
 					</div>
@@ -290,4 +292,58 @@
 		</div>
 	</div>
 </body>
+
+<!-- 组件模版-->
+<script type="text/html" id="componentTemplate">
+	{{for dataList}}
+		<div class="component" data-id="{{:id}}">
+			<div class="leftBorder"></div>
+				<div class="remark">
+					<div class="icon {{:icon}}"></div>
+					<div class="desc">
+					<div class="dot {{:dotColor}}"></div>
+					<div class="memos">
+						<span class="remark-title">{{:title}}</span>
+						<span class="remark-other">版本: {{:version}}</span>
+						<span class="remark-other">源自共享: 
+							{{if share}}
+							是
+							{{else}}
+							否
+							{{/if}}
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="operation">
+				<span>运维</span>
+				<span id="splitor">|</span>
+				<span>详情</span>
+			</div>
+		</div>
+	{{/for}}
+</script>
+
+
+<!-- 分页栏信息-->
+<script type="text/html" id="pageTemplate">
+	<div class="pageTitle"><span>共{{:total}}条记录  第{{:current}}/{{:totalPages}}页</span></div>
+	<div class="page firstPage"></div>
+	<div class="page prePage"></div>
+	{{for pages}}
+		<div class="page"><span>{{:page}}</span></div>
+	{{/for}}
+	<div class="page nextPage"></div>
+	<div class="page lastPage"></div>
+	<div class="pageSelect">
+		<select>
+			<option>{{:pageSize}}条/页</option>
+		</select>
+	</div>
+	<div class="lastPageTitle">
+		<span>跳至</span>
+		<input type="text" id="targetPage" value="{{:targetPage}}"/>
+		<span>页</span>
+	</div>
+</script>
 </html>
